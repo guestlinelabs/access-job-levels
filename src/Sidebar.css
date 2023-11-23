@@ -1,0 +1,102 @@
+
+.sidebar {
+    background-color: rgb(87, 87, 89);;
+    padding: 20px;
+    width: 350px;
+    color: white;
+    height: calc(100vh - 115px);
+    z-index: 1;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    border: 3px solid white;
+    display: block;
+    width: 175px;
+    height: 175px;
+    margin: 0 auto 20px;
+    object-fit: cover;
+}
+
+.responsibility {
+    display: flex;
+    align-items: center;
+}
+
+
+.responsibility-list .responsibility {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-circle {
+    min-width: 50px; 
+    min-height: 50px;
+    border-radius: 50%;
+    background-color: rgb(228, 21, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.icon-circle img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.responsibility-info {
+    flex-grow: 1;
+}
+
+
+.responsibility-info {
+    flex-grow: 1;
+}
+
+.title {
+    display: block;
+    font-weight: bold;
+}
+
+.subtitle {
+    display: block;
+    font-size: 0.8rem;
+    color: #eee;
+    margin-bottom: 5px;
+}
+
+.level-container {
+    display: flex;
+}
+
+.level-number {
+    line-height: 24px;
+}
+
+.level-bar {
+    background-color: rgb(85,180,180);
+    height: 24px;
+    border-radius: 12px;
+    width: calc(24px * 7);
+    margin-right: 10px; 
+    position: relative;
+}
+
+.level {
+    background-color: rgb(156,216,202); 
+}
+
+.level, .level-upper-bound {
+    height: 100%;
+
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.level-upper-bound {
+    background-color: rgb(136,206,202); 
+}

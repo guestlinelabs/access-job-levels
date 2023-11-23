@@ -1,0 +1,177 @@
+a:link {
+  color: e5173f;
+}
+
+a:visited {
+  color: rgb(183,27,49);
+}
+
+header {
+  background-color: #e5173f;
+  color: white;
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fixed-forward-button {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  align-content: center;
+  justify-content: center;
+  top: 50vh;
+  right: 0;
+  width: 50px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  z-index: 3;
+}
+
+.fixed-back-button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  align-items: center;
+  vertical-align: middle;
+  align-content: center;
+  top: 50vh;
+  left: 0;
+  width: 40px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  z-index: 3;
+}
+
+.top-row, .title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(75px - 16px);
+  fill: white;
+}
+
+
+.toc table {
+  border-spacing: 0 10px;
+  margin: 20px 100px;
+}
+
+
+.toc thead > tr {
+  background-color: rgb(183,27,49);
+  color: white;
+  border-style: dashed;
+}
+
+.toc tbody > tr {
+  background-color: rgb(222,222,222);
+  border-style: dashed;
+}
+
+.toc tr {
+  height: 95px;
+}
+
+.toc  td, .toc >th {
+  padding: 4px 16px;
+}
+
+.toc td > a, .toc td > div {
+  background-color: white;
+  margin: 4px;
+  padding: 4px;
+  width: 100%;
+  height: 95px;
+  text-align: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+}
+
+.toc td > div {
+  height: 40px;
+}
+
+/*---*/
+
+
+.core-competencies, .key-responsibilities {
+  flex: 1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.core-competencies {
+  background-color: white;
+  margin-left: 100px;
+}
+
+.core-competencies h2 {
+  color: rgb(90,159,150);
+}
+
+.core-competencies ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 16px;
+}
+
+.core-competencies li {
+  margin-bottom: 10px;
+}
+
+.core-competencies li:before {
+  content: '•';
+  color: #e5173f;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.key-responsibilities {
+  margin-right: 100px;
+}
+
+.key-responsibilities table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.key-responsibilities th, .key-responsibilities td {
+  padding: 8px;
+  border: 2px solid white;
+  text-align: left;
+}
+
+.key-responsibilities th {
+  background-color: #4b112c;
+  color: white;
+}
+
+.key-responsibilities td:nth-child(even) {
+  background-color: rgb(195,195,195);
+}
+
+.key-responsibilities td:nth-child(odd) {
+  background-color: rgb(229,229,229);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+
+  .core-competencies, .key-responsibilities {
+      flex: none;
+      width: calc(100% - 32px);
+  }
+}
