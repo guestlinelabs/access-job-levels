@@ -3,7 +3,7 @@ import Sidebar from './Sidebar';
 
 import { JobProfile, RoleFocusScale } from './JobProfile';
 import './Dashboard.css'
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 interface DashboardProps {
     profile: JobProfile;
@@ -101,9 +101,9 @@ const Dashboard: React.FC<DashboardProps> = ({ profile }) => {
     const route = useLocation().pathname.substring(1);
     return <>
         <div className="fixed-forward-button">
-            <a href={`/${route}/details`} >
+            <Link to={`/${route}/details`} >
                 <img src='/icons/arrow_forward.svg' alt="details" height="40px" />
-            </a>
+            </Link>
         </div>
         <Sidebar profile={profile} />
         <div className="main-content">

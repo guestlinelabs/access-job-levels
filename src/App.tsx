@@ -23,9 +23,9 @@ function Details() {
 
   return <>
     <div className="fixed-back-button">
-      <a href={`/${route[1]}`} >
+      <Link to={`/${route[1]}`} >
         <img src='/icons/arrow_back.svg' alt="details" height="40px" />
-      </a>
+      </Link>
     </div>
     {jobProfile.loading && <div>Loading</div>}
     {!jobProfile.loading && !jobProfile.error && jobProfile.data && <><section className="core-competencies">
