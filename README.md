@@ -23,7 +23,9 @@ The Product and Engineering Individual Contributor job levels are available [her
 
 Note: parsing of these is not particularly robust and you must match the format exactly. 
 
-## Development Getting Started
+## Development
+This project was built using Vite.js 
+
 To run the developement server execute:
 
 ```
