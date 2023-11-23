@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Access Job Levels
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose 
+This is a quick React proof-of-concept application I made as an alternative to the slide deck that is currently used, 
 
-Currently, two official plugins are available:
+During the job mapping process, I found that it was challenging because the are gaps in the described roles and that some roles did not match up to industry norms. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I had to perform job mapping, this meant I had to dedicate time to reading the slides, understanding the roles so that I could apply them to the organisation. 
 
-## Expanding the ESLint configuration
+## Markdown Job Levels
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+I stored the job levels as markdown because it is easily editted by a human. 
 
-- Configure the top-level `parserOptions` property like this:
+The job levels are available [here](/public/roles)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Not parsing of these is not particularly robust and you must match the format exactly. 
+
+## Development Getting Started
+To run the developement server execute:
+
+```
+yarn dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+You should be able to follow the provided link in the console.
