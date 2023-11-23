@@ -45,8 +45,6 @@ function Details() {
 }
 
 function App() {
-  const title = ""
-
   return (<>
     <header>
       <div className="top-row">

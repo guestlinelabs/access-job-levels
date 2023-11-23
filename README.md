@@ -14,7 +14,9 @@ At Guestline, we currently store our levels in Word documents available for edit
 
 Instead of using Word, I (automatically) transcribed the slides to Markdown. Markdown is easy for humans to read and edit. It acts as a backend CMS, and Github (or Azure DevOps) could serve as a frontend. However, this project raises an important consideration: is the app necessary, or could Markdown alone suffice?
 
-Git is key feature of this approach. It allows us to adopt more flexible and controlled workflows. For instance, we can implement restrictions on direct commits to the mainline, ensuring a more robust review and approval process. This shift not only enhances the accuracy of job mapping but also aligns with modern development practices, fostering a culture of continuous improvement and adaptation.
+Git is key feature of this approach. It allows us to adopt more flexible and controlled workflows. For instance, we can implement restrictions on direct commits to the mainline, ensuring a more robust review and approval process. 
+
+This shift in approach not only enhances the accuracy of job mapping but also aligns with modern development practices, fostering a culture of continuous improvement and adaptation.
 
 ## Markdown Job Levels
 The Product and Engineering Individual Contributor job levels are available [here](/public/roles) to browse as markdown.
