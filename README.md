@@ -1,19 +1,25 @@
 # Access Job Levels
 
 ## Purpose 
-This is a quick React proof-of-concept application I made as an alternative to the slide deck that is currently used, 
 
-During the job mapping process, I found that it was challenging because the are gaps in the described roles and that some roles did not match up to industry norms. 
+I have developed a React proof-of-concept application as an alternative to the Page Tiger slides that are currently used. 
 
-I had to perform job mapping, this meant I had to dedicate time to reading the slides, understanding the roles so that I could apply them to the organisation. 
+This concept stemmed from the challenges I encountered during the job mapping process. I found discrepancies, gaps in the roles described on the deck. I've dedicated significant time to reading the roles and understanding them so that I can apply it to the organisation I manage.
+
+I have no fears that my feedback would be negatively received, but there is not a clear process for suggesting changes where I see errors or contributing some of the missing roles. I worry I'd be distracting people with other priorities, they would not be able to respond to my feedback in a timely fashion and therefore I'd be wasting effort raising any issues. 
+
+This PoC serves as a response to these challenges. My aim is to streamline the review and publishing process for feedback to the Product and Engineering Individual Contributor job levels. 
+
+At Guestline, we currently store our levels in Word documents available for edit and comment on Sharepoint. This is sufficient when you have a single author receiving feedback, but does not scale very well to multiple contributors. 
+
+Instead of using Word, I (automatically) transcribed the slides to Markdown. Markdown is easy for humans to read and edit. It acts as a backend CMS, and Github (or Azure DevOps) could serve as a frontend. However, this project raises an important consideration: is the app necessary, or could Markdown alone suffice?
+
+Git is key feature of this approach. It allows us to adopt more flexible and controlled workflows. For instance, we can implement restrictions on direct commits to the mainline, ensuring a more robust review and approval process. This shift not only enhances the accuracy of job mapping but also aligns with modern development practices, fostering a culture of continuous improvement and adaptation.
 
 ## Markdown Job Levels
+The Product and Engineering Individual Contributor job levels are available [here](/public/roles) to browse as markdown.
 
-I stored the job levels as markdown because it is easily editted by a human. 
-
-The job levels are available [here](/public/roles)
-
-Not parsing of these is not particularly robust and you must match the format exactly. 
+Note: parsing of these is not particularly robust and you must match the format exactly. 
 
 ## Development Getting Started
 To run the developement server execute:
