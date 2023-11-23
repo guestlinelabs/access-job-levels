@@ -17,7 +17,7 @@ function Attributes({ profile }: { profile: JobProfile }) {
         <div className="attributes-list">
             <div className="attribute-item">
                 <div className="icon-circle">
-                    <img src="/icons/scope.svg" alt="Scope" />
+                    <img src="/access-job-levels/icons/scope.svg" alt="Scope" />
                 </div>
                 <div className="attribute-text">
                     <strong>Scope</strong><br />
@@ -26,7 +26,7 @@ function Attributes({ profile }: { profile: JobProfile }) {
             </div>
             <div className="attribute-item">
                 <div className="icon-circle">
-                    <img src="/icons/drive.svg" alt="Drive" />
+                    <img src="/access-job-levels/icons/drive.svg" alt="Drive" />
                 </div>
                 <div className="attribute-text">
                     <strong>Drive</strong><br />
@@ -35,7 +35,7 @@ function Attributes({ profile }: { profile: JobProfile }) {
             </div>
             <div className="attribute-item">
                 <div className="icon-circle">
-                    <img src="/icons/style.svg" alt="Style" />
+                    <img src="/access-job-levels/icons/style.svg" alt="Style" />
                 </div>
                 <div className="attribute-text">
                     <strong>Style</strong><br />
@@ -44,7 +44,7 @@ function Attributes({ profile }: { profile: JobProfile }) {
             </div>
             <div className="attribute-item">
                 <div className="icon-circle">
-                    <img src="/icons/communication.svg" alt="Communication" />
+                    <img src="/access-job-levels/icons/communication.svg" alt="Communication" />
                 </div>
                 <div className="attribute-text">
                     <strong>Communication</strong><br />
@@ -53,7 +53,7 @@ function Attributes({ profile }: { profile: JobProfile }) {
             </div>
             <div className="attribute-item">
                 <div className="icon-circle">
-                    <img src="/icons/leadership.svg" alt="Leadership/Engagement" />
+                    <img src="/access-job-levels/icons/leadership.svg" alt="Leadership/Engagement" />
                 </div>
                 <div className="attribute-text">
                     <strong>Leadership/Engagement</strong><br />
@@ -98,11 +98,13 @@ function Alignment({ profile }: { profile: JobProfile }) {
 }
 
 const Dashboard: React.FC<DashboardProps> = ({ profile }) => {
-    const route = useLocation().pathname.substring(1);
+    const location = useLocation();
+    const route = location.pathname.split('/');
+    const last = route[route.length-1];
     return <>
         <div className="fixed-forward-button">
-            <Link to={`/${route}/details`} >
-                <img src='/icons/arrow_forward.svg' alt="details" height="40px" />
+            <Link to={`/access-job-levels/${last}/details`} >
+                <img src='/access-job-levels/icons/arrow_forward.svg' alt="details" height="40px" />
             </Link>
         </div>
         <Sidebar profile={profile} />

@@ -23,7 +23,7 @@ function LevelBars({values}:{values:number[]}) {
 function ResponsibilityItem({ responsibility, r }: { responsibility: string, r: Responsibility }) {  
     return <div className="responsibility">
         <div className="icon-circle">
-            <img src={`icons/${getImageUrl(responsibility)}.svg`} alt={responsibility} />
+            <img src={`/access-job-levels/icons/${getImageUrl(responsibility)}.svg`} alt={responsibility} />
         </div>
         <div className="responsibility-info">
             <span className="title">{responsibility}</span>

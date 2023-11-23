@@ -6,8 +6,10 @@ import './App.css'
 import Dashboard from './Dashboard';
 
 function Profile() {
-  const route = useLocation();
-  const jobProfile = useJobProfile(`/roles${route.pathname}.md`);
+  const location = useLocation();
+  const route = location.pathname.split('/');
+  const last = route[route.length-1];
+  const jobProfile = useJobProfile(`/access-job-levels/roles/${last}.md`);
 
   return <>
     {jobProfile.loading && <div>Loading</div>}
@@ -19,11 +21,12 @@ function Profile() {
 function Details() {
   const location = useLocation();
   const route = location.pathname.split('/');
-  const jobProfile = useJobProfile(`/roles/${route[1]}.md`);
+  const last = route[route.length-2];
+  const jobProfile = useJobProfile(`/access-job-levels/roles/${last}.md`);
   return <>
     <div className="fixed-back-button">
-      <Link to={`/${route[1]}`} >
-        <img src='/icons/arrow_back.svg' alt="details" height="40px" />
+      <Link to={`/access-job-levels/${last}`} >
+        <img src='/access-job-levels/icons/arrow_back.svg' alt="details" height="40px" />
       </Link>
     </div>
     {jobProfile.loading && <div>Loading</div>}
@@ -47,15 +50,15 @@ function App() {
   return (<>
     <header>
       <div className="top-row">
-        <img src='/logo.svg' alt="Company Logo" />
-        <Link to="/"><img src='/icons/home.svg' alt="Home Icon" height="48px" /></Link>
+        <img src='/access-job-levels/logo.svg' alt="Company Logo" />
+        <Link to="/access-job-levels/"><img src='/access-job-levels/icons/home.svg' alt="Home Icon" height="48px" /></Link>
       </div>
     </header>
     <main>
       <Routes>
-        <Route path="/:profile" element={<Profile />} />
-        <Route path="/:profile/details" element={<Details />} />
-        <Route path="/" element={<TableOfContents />} />
+        <Route path="/access-job-levels/:profile" element={<Profile />} />
+        <Route path="/access-job-levels/:profile/details" element={<Details />} />
+        <Route path="/access-job-levels/" element={<TableOfContents />} />
       </Routes>
     </main>
   </>);
