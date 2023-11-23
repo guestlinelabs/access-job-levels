@@ -20,7 +20,6 @@ function Details() {
   const location = useLocation();
   const route = location.pathname.split('/');
   const jobProfile = useJobProfile(`/roles/${route[1]}.md`);
-
   return <>
     <div className="fixed-back-button">
       <Link to={`/${route[1]}`} >
