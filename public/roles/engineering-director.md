@@ -26,7 +26,7 @@ Strong leader, inspires and motivates teams.
 "Proven leadership in engineering with a track record of delivering complex, large-scale projects. Skilled in driving innovation while balancing business and technical needs."
 
 ## Role Focus
-- Tactical vs Strategic: 0.3
+- Tactical vs Strategic: 0.66
 - Team vs Division: 1
 - Technical vs People: 0.5
 
