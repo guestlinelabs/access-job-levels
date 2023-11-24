@@ -39,7 +39,7 @@ function Details() {
       <section className="key-responsibilities">
         <table>
           <th>Key Responsibilities</th>
-          {jobProfile.data.core_competencies.map((c, i) => <tr key={i + 'kr'}><td >{c}</td></tr>)}
+          {jobProfile.data.key_responsibilities.map((c, i) => <tr key={i + 'kr'}><td >{c}</td></tr>)}
         </table>
       </section></>}
     {jobProfile.error && <div>Error {location.pathname} {route[1]} {JSON.stringify(jobProfile.error)}</div>}
