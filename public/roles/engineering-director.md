@@ -27,7 +27,7 @@ Strong leader, inspires and motivates teams.
 
 ## Role Focus
 - Tactical vs Strategic: 0.66
-- Team vs Division: 1
+- Team vs Division: 0.85
 - Technical vs People: 0.5
 
 ## Engineering Director – Job Profile
