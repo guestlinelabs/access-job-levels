@@ -47,5 +47,4 @@ Strong leader, inspires and motivates teams.
 - Ensure alignment of engineering practices with industry standards and company policies.
 - Drive innovation and efficiency through the adoption of new technologies and methodologies.
 - Collaborate with other departments to ensure cohesive organizational growth and development.
-- Manage budgeting, resource allocation, and forecasting for the engineering division.
-- Represent the engineering team in executive meetings and external engagements.
+- Manage resource allocation to ensure a healthy balance of skills across the engineering division.
