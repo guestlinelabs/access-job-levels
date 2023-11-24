@@ -16,7 +16,7 @@ Instead of using Word, I (automatically) transcribed the slides to Markdown. Mar
 
 Git is key feature of this approach. It allows us to adopt more flexible and controlled workflows. For instance, we can implement restrictions on direct commits to the mainline, ensuring a more robust review and approval process. 
 
-This shift in approach not only enhances the accuracy of job mapping but also aligns with modern development practices, fostering a culture of continuous improvement and adaptation.
+This shift in approach not only enhances the accuracy of job mapping but also aligns with decentralized decision making, fosters a culture of continuous improvement and adaptation.
 
 ## Markdown Job Levels
 The Product and Engineering Individual Contributor job levels are available [here](/public/roles) to browse as markdown.
